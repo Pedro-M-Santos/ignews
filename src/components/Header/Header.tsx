@@ -1,4 +1,5 @@
-import styles from './Header.module.css'
+import SignInButton from '../SignInButton'
+import styles from './Header.module.scss'
 
 export default function Header() {
     return (
@@ -9,9 +10,10 @@ export default function Header() {
                     alt='logo'
                 />
                 <nav>
-                    <a>Home</a>
+                    <a className={styles.active}>Home</a>
                     <a>Posts</a>
                 </nav>
+                <SignInButton />
             </div>
         </header>
     )
